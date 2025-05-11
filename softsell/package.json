@@ -3,12 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/kajal07/softsell",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
-  },
+    "preview": "vite preview",
+  "predeploy": "npm run build",
+"deploy": "gh-pages -d dist"
+},
   "dependencies": {
     "bootstrap": "^5.3.6",
     "framer-motion": "^12.10.5",
